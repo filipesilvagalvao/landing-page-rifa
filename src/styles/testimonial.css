@@ -1,0 +1,55 @@
+#testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+    margin-top: 100px;
+}
+
+#testimonials >div{
+    display: flex;
+    margin: 70px 0;
+}
+
+#person-smile img {
+    width: 60%;
+    background-color: #f8f4f4;
+    border-radius: 25% 25% 1%;
+}
+
+#feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    
+}
+.winner{
+    background-color: #f8f4f4;
+    color: #000;
+    padding: 15px;
+    border-radius: 30px 30px 1px;
+    box-shadow: 0px 0px 14px 2px rgb(0, 1, 1);
+}
+.winner > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.winner img{
+    border-radius: 100%;
+    width: 70px;
+}
+
+@media screen and (max-width: 1170px){
+    #person-smile{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .winner p, .date, h4{
+        font-size: 0.9rem;
+    }
+
+}

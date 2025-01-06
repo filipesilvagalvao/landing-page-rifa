@@ -1,0 +1,48 @@
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+#cta h1{
+    font-size: 3.5rem;
+}
+#cta p{
+    font-size: 1.3rem;
+    margin: 30px 0;
+}
+#cta .money{
+    color: #28A745;
+}
+#cta button{
+    margin-bottom: 30px;
+}
+
+#banner img{
+    /*box-shadow: 10px 0 30px #fff;*/
+    filter: drop-shadow(10px 0 30px #000000);
+    width: 850px;
+}
+
+@media screen and (max-width: 1170px){
+    #banner img{
+        width: 100%;
+    }
+    #cta h1{
+        font-size: 2.7rem;
+    }
+}
+@media screen and (max-width: 700px){
+    #banner{
+        margin-top: 90px;
+    }
+    #cta h1{
+        font-size: 2rem;
+    }
+    #cta p{
+        font-size: 1rem;
+    }
+    #home{
+        flex-wrap: wrap;
+    }
+}

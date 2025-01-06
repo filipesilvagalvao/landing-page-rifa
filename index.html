@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/award.css">
+    <link rel="stylesheet" href="./src/styles/testimonial.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+
+    <link rel="shortcut icon" href="./src/images/brasil.png" type="image/png">
+    <script src="./src/javascript/script.js" defer></script>
+    <title>Lucky Brasil</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo"><i class="fa-solid fa-clover"> Luck Bra$il</i><img src="./src/images/brasil.png" alt="ícone brasil" id="icon-br"></div>
+
+            <ul id="nav-list">
+                <li class="nav-item active"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#award">Prêmios</a></li>
+                <li class="nav-item"><a href="#last-winner">Últimos Ganhadores</a></li>
+            </ul>
+
+            <button class="btn-default">Participar Agora!</button>
+        </nav>
+
+        <div id="mobile_menu" class="hide">
+            <ul id="mobile_nav_list">
+                <li class="nav-item active"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#award">Prêmios</a></li>
+                <li class="nav-item"><a href="#last-winner">Últimos Ganhadores</a></li>
+                <button class="btn-default">
+                    Participe Agora!
+                </button>
+            </ul>
+        </div>
+        
+        <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <main>
+        <section id="home">
+            <div id="cta">
+                <h1>Participe e ganhe <span class="money">R$10.000,00</span></h1>
+                <p>Receba seu prêmio no pix!</p>
+                <button class="btn-default">Participar Agora!</button>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="./src/images/dinheiro-real.png" alt="">
+            </div>
+        </section>
+
+        <section id="award">
+            <h2>Prêmios</h2>
+            <h3>Combo de prêmios</h3>
+            <div id="grid-awards">
+                <div class="gift">
+                    <div>
+                        <img src="./src/images/iPhone-16-Pro-Max-Titanio-Deserto.png" alt="">
+                    </div>
+                </div>
+                <div class="gift">
+                    <div>
+                        <img src="./src/images/ps5-slim.webp" alt="">
+                    </div>
+                </div>
+                <div class="gift">
+                    <div>
+                        <img src="./src/images/pc-gamer.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="btn-default">Participar Agora!</button>
+        </section>
+
+        <section id="testimonials">
+            <h2>Feedbacks</h2>
+            <h3>Depoimentos dos ganhadores</h3>
+            <div id="last-winner">
+                <div id="person-smile">
+                    <img src="./src/images/pessoa-feedback.png" alt="">
+                </div>
+                <div id="feedback">
+                    <div class="winner">
+                        <div>
+                            <img src="./src/images/persons/maria.jpg" alt=""><h4>Fulada de tal</h4><span class="date">06/01/2025</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda praesentium asperiores quidem quia labore voluptatibus ratione amet vero! Impedit natus odio beatae sit accusamus similique inventore quasi itaque dolorum.</p>
+                    </div>
+                    <div class="winner">
+                        <div>
+                            <img src="./src/images/persons/maria.jpg" alt=""><h4>Fulada de tal</h4><span class="date">06/01/2025</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda praesentium asperiores quidem quia labore voluptatibus ratione amet vero! Impedit natus odio beatae sit accusamus similique inventore quasi itaque dolorum.</p>
+                    </div>
+                    <div class="winner">
+                        <div>
+                            <img src="./src/images/persons/maria.jpg" alt=""><h4>Fulada de tal</h4><span class="date">06/01/2025</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis assumenda praesentium asperiores quidem quia labore voluptatibus ratione amet vero! Impedit natus odio beatae sit accusamus similique inventore quasi itaque dolorum.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-default">Participar Agora!</button>
+        </section>
+    </main>
+    <footer>
+        <img src="./src/images/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Lucky Brasil
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
