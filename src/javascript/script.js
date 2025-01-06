@@ -8,3 +8,13 @@ mobile_btn.addEventListener('click', ()=>{
     i_mobile_btn.classList.toggle('fa-x')
     mobile_menu.classList.toggle('hide')
 })
+
+const accordions = document.querySelectorAll('.accordion')
+
+accordions.forEach(accordion =>{
+    accordion.addEventListener('click', (e)=>{
+        e.stopPropagation()
+        const body = accordion.querySelector('.accordion-body')
+        body.classList.toggle('active-accordion')
+    })
+})
