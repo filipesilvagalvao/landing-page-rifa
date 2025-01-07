@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./animations/animation-home.css');
+@import url('./doubts.css');
+@import url('./footer.css');
+@import url('./award.css');
+@import url('./main.css');
+@import url('./testimonial.css');
+@import url('./header.css');
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +19,7 @@ body {
     background-image: url('https://playtvonline.com/wp-content/uploads/2024/11/background-black.webp');
     background-color: #272727;
     color: #f0ffff;
+    overflow-x: hidden;
 }
 
 .btn-default{
@@ -68,95 +76,6 @@ h3{
     justify-content: center;
     align-items: center;
 }
-/*accordion*/
-#doubts{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 8%;  
-    margin-top: 70px;
-}
-#doubts h2{
-    margin-bottom: 30px;
-}
-#doubts > div{
-    padding: 0 8%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #00000070;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.accordion{
-    background-color: #fff;
-    color: #000000;
-    border-radius: 20px;
-    padding: 12px;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.accordion-header{
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.accordion-header span{
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.accordion-body{
-    color: #333;
-    font-size: 0.9rem;
-    opacity: 0;
-    height: 0;
-}
-.accordion-body p{
-    pointer-events: none;
-}
-@keyframes deslizarDeCima {
-    0% {
-        transform: translateY(-100%);
-        /* Fora da tela, na parte superior */
-        opacity: 0;
-        /* Invisível */
-    }
-
-    100% {
-        transform: translateY(0);
-        /* Posição final na tela */
-        opacity: 1;
-        /* Totalmente visível */
-    }
-}
-.accordion-body.active-accordion{
-    height: 100%;
-    opacity: 1;
-    padding: 5px 0;
-    animation: deslizarDeCima .2s ease-out 1;
-}
-
-.arrow{
-    transition: transform .1s linear;
-}
-.accordion:has(.active-accordion) .arrow{
-    transform: rotate(180deg);
-}
-
 @media screen and (max-width: 700px){
     #cta button{
         padding: 5px;

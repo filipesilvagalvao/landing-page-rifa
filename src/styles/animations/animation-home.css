@@ -1,0 +1,61 @@
+@keyframes scrollframebanner {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+#banner img{
+    animation: scrollframebanner 1s ease;
+}
+
+@keyframes scrollframecta {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#cta{
+    animation: scrollframecta 1s ease;
+}
+
+@keyframes scrollframeaward {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+#run1{
+    animation: scrollframeaward 1s ease-out;
+}
+#run2{
+    animation: scrollframeaward 2s ease-out;
+}
+#run3{
+    animation: scrollframeaward 3s ease-out;
+}
+#run4{
+    animation: scrollframebanner 1s ease;
+}
+#run5{
+    animation: scrollframebanner 2s ease;
+}
+#run6{
+    animation: scrollframebanner 3s ease;
+}
