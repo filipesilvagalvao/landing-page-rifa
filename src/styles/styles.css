@@ -22,7 +22,7 @@ a[href="#top"] {
     background-color: #28A745;
     border-radius: 100%;
     text-align: center;
-    z-index: 6;
+    z-index: 100;
 }
 
 a[href="#top"]:hover {
