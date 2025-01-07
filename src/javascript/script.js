@@ -40,7 +40,7 @@ const myObserver = new IntersectionObserver((entries) => {
 
 myObserver.observe(award);
 
-const testimonials = document.querySelector('#testimonials');
+/*const testimonials = document.querySelector('#testimonials');
 const winner = document.querySelectorAll('.winner');
 
 const myObserver2 = new IntersectionObserver((entries) => {
@@ -57,7 +57,7 @@ const myObserver2 = new IntersectionObserver((entries) => {
     
 });
 
-myObserver2.observe(testimonials);
+myObserver2.observe(testimonials);*/
 
 //scroll suave
 const a = document.querySelectorAll('header a[href^="#"')
