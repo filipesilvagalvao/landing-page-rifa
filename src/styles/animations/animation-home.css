@@ -10,7 +10,8 @@
     }
 }
 #banner img{
-    animation: scrollframebanner 1s ease;
+    animation: scrollframebanner 1s ease-out forwards;
+    position: relative;
 }
 
 @keyframes scrollframecta {
@@ -26,7 +27,8 @@
 }
 
 #cta{
-    animation: scrollframecta 1s ease;
+    animation: scrollframecta 1s ease-out forwards;
+    position: relative;
 }
 
 @keyframes scrollframeaward {
@@ -42,23 +44,26 @@
 }
 
 #run1{
-    animation: scrollframeaward 1s ease-out;
+    animation: scrollframeaward 1s ease-out forwards;
+    position: relative;
 }
 #run2{
-    animation: scrollframeaward 2s ease-out;
+    animation: scrollframeaward 2s ease-out forwards;
+    position: relative;
 }
 #run3{
-    animation: scrollframeaward 3s ease-out;
+    animation: scrollframeaward 3s ease-out forwards;
+    position: relative;
 }
 #run4{
-    animation: scrollframebanner 1s ease;
-    overflow-x: hidden;
+    animation: scrollframebanner 1s ease-out forwards;
+    position: relative;
 }
 #run5{
-    animation: scrollframebanner 2s ease;
-    overflow-x: hidden;
+    animation: scrollframebanner 2s ease-out forwards;
+    position: relative;
 }
 #run6{
-    animation: scrollframebanner 3s ease;
-    overflow-x: hidden;
+    animation: scrollframebanner 3s ease-out forwards;
+    position: relative;
 }
