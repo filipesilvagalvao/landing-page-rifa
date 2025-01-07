@@ -30,6 +30,7 @@
 #cta{
     animation: scrollframecta 1s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 
 @keyframes scrollframeaward {

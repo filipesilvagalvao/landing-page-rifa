@@ -30,7 +30,6 @@ const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             gift.forEach((e, i) => {
-                myObserver.unobserve(award);
                 e.id = `run${i + 1}`; // Define IDs únicos para os elementos visíveis
             });
         } 
@@ -48,7 +47,6 @@ const myObserver2 = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             let i = 4
             winner.forEach((e) => {
-                myObserver2.unobserve(testimonials);
                 e.id = `run${i}`; // Define IDs únicos para os elementos visíveis
                 i++
             });
