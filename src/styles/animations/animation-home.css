@@ -52,10 +52,13 @@
 }
 #run4{
     animation: scrollframebanner 1s ease;
+    overflow-x: hidden;
 }
 #run5{
     animation: scrollframebanner 2s ease;
+    overflow-x: hidden;
 }
 #run6{
     animation: scrollframebanner 3s ease;
+    overflow-x: hidden;
 }
