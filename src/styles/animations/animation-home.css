@@ -12,6 +12,7 @@
 #banner img{
     animation: scrollframebanner 1s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 
 @keyframes scrollframecta {
@@ -46,24 +47,30 @@
 #run1{
     animation: scrollframeaward 1s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 #run2{
     animation: scrollframeaward 2s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 #run3{
     animation: scrollframeaward 3s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 #run4{
     animation: scrollframebanner 1s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 #run5{
     animation: scrollframebanner 2s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
 #run6{
     animation: scrollframebanner 3s ease-out forwards;
     position: relative;
+    overflow-x: hidden;
 }
