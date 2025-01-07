@@ -1,7 +1,8 @@
-header{
+header {
     width: 100%;
     padding: 28px 8%;
     position: fixed;
+    top: 0;
     z-index: 4;
     background-color: black;
 }
@@ -10,7 +11,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 #navbar i{
@@ -84,6 +84,7 @@ header{
 @media screen and (max-width: 700px){
     #mobile_menu{
         font-size: 12px;
+        background-color: black;
     }
     #mobile_menu button{
         padding: 5px;
