@@ -45,14 +45,27 @@ const winner = document.querySelectorAll('.winner');
 const myObserver2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            let i = 4
+            /*let i = 4
             winner.forEach((e) => {
                 e.id = `run${i}`; // Define IDs únicos para os elementos visíveis
                 i++
-            });
-        } 
+            });*/
+            let count = 0;
+
+            const interval = setInterval(() => {
+                winner[count].classList.add('runfeedbacks') 
+                winner[count].style.opacity = '1'
+                count++;
+                console.log(`Execução número: ${count}`);
+
+                if (count === 15) {
+                    clearInterval(interval); // Para o intervalo após 15 execuções
+                }
+            }, 200); // 1000 ms = 1 segundo
+
+        }
     });
-    
+
 });
 
 myObserver2.observe(testimonials);

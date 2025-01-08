@@ -3,10 +3,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
-    min-height: 110vh;
+    min-height: 100vh;
 }
 #cta h1{
-    font-size: 3.5rem;
+    font-size: 2.9rem;
+}
+#cta span{
+    font-size: 2.1rem;
 }
 #cta p{
     font-size: 1.3rem;
@@ -14,6 +17,7 @@
 }
 #cta .money{
     color: #28A745;
+    font-size: 3rem;
 }
 #cta button{
     margin-bottom: 30px;
@@ -30,15 +34,24 @@
         width: 100%;
     }
     #cta h1{
-        font-size: 2.7rem;
+        font-size: 2.6rem;
     }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 840px){
+    main{
+        margin-top: 110px;
+    }
     #banner{
         margin-top: 90px;
     }
     #cta h1{
         font-size: 2rem;
+    }
+    #cta span{
+        font-size: 1.5rem;
+    }
+    #cta .money{
+        font-size: 2.5rem;
     }
     #cta p{
         font-size: 1rem;
