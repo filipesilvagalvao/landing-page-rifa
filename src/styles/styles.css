@@ -15,7 +15,6 @@
 body {
     margin: 0;
     /* Remove margem padrão */
-    background-image: url('https://playtvonline.com/wp-content/uploads/2024/11/background-black.webp');
     background-color: #272727;
     color: #f0ffff;
     overflow-x: hidden;
