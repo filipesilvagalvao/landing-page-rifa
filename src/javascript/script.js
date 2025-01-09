@@ -40,7 +40,7 @@ const myObserver = new IntersectionObserver((entries) => {
                 if (count === 3) {
                     clearInterval(interval); // Para o intervalo após 3 execuções
                 }
-            }, 500)
+            }, 300)
 
         } 
     });
@@ -98,7 +98,7 @@ a.forEach((link)=>{
     })
 })	
 
-
+//button ontop
 jQuery(document).ready(function () {
 
     jQuery(window).scroll(function () {
