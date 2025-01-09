@@ -4,7 +4,6 @@
     justify-content: space-between;
     padding: 0 8%;
     min-height: 100vh;
-    overflow-x: hidden;
 }
 #cta h1{
     font-size: 2.9rem;
@@ -39,9 +38,6 @@
     }
 }
 @media screen and (max-width: 840px){
-    main{
-        padding-top: 110px;
-    }
     #banner{
         margin-top: 90px;
     }
