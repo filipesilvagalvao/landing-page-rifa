@@ -23,15 +23,25 @@ accordions.forEach(accordion =>{
 
 //animation appear awards
 
-const award = document.querySelector('#award');
+const award = document.querySelector('#grid-awards');
 const gift = document.querySelectorAll('.gift');
 
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            gift.forEach((e, i) => {
-                e.id = `run${i + 1}`; // Define IDs únicos para os elementos visíveis
-            });
+            let count = 0;
+
+            const interval = setInterval(() => {
+                gift[count].id = 'run1'
+                gift[count].style.opacity = '1'
+                count++;
+                console.log(`Execução número: ${count}`);
+
+                if (count === 3) {
+                    clearInterval(interval); // Para o intervalo após 3 execuções
+                }
+            }, 500)
+
         } 
     });
     

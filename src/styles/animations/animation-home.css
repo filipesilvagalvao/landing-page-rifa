@@ -1,17 +1,16 @@
 @keyframes scrollframebanner {
     0% {
-        transform: translateX(100%);
         opacity: 0;
+        transform: translateY(100%);
     }
 
     100% {
-        transform: translateX(0%);
         opacity: 1;
+        transform: translateY(0%);
     }
 }
 #banner img{
     animation: scrollframebanner 1s ease-out forwards;
-    position: relative;
     overflow-x: hidden;
 }
 
@@ -49,19 +48,21 @@
     animation: scrollframeaward 1s ease-out forwards;
     position: relative;
     overflow-x: hidden;
+    opacity: 1;
 }
-#run2{
-    animation: scrollframeaward 2s ease-out forwards;
-    position: relative;
-    overflow-x: hidden;
-}
-#run3{
-    animation: scrollframeaward 3s ease-out forwards;
-    position: relative;
-    overflow-x: hidden;
+@keyframes scrollframefeedback {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 .runfeedbacks{
-    animation: scrollframebanner 1s ease-out forwards;
+    animation: scrollframefeedback 1s ease-out forwards;
     position: relative;
     overflow-x: hidden;
 }
