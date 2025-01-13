@@ -73,7 +73,11 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
+#temu{
+    width: 8%;
+    border-radius: 15px;
+    transform: translateY(25%);
+}
 a[href="#top"] {
     padding: 7px 7px 0 ;
     position: fixed;
