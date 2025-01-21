@@ -116,3 +116,29 @@ jQuery(document).ready(function () {
 
 });	
 
+//compartilhar função
+function compartilhar(plataforma) {
+    const url = encodeURIComponent(window.location.href); // URL da página atual
+    const texto = encodeURIComponent("Confira este conteúdo incrível!"); // Texto a ser compartilhado
+
+    let linkCompartilhamento = "";
+
+    switch (plataforma) {
+        case 'facebook':
+            linkCompartilhamento = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            break;
+        case 'whatsapp':
+            linkCompartilhamento = `https://api.whatsapp.com/send?text=${texto} ${url}`;
+            break;
+        case 'instagram':
+            alert("O Instagram não possui um link direto para compartilhamento como o Facebook e o WhatsApp. Por favor, use o app para compartilhar.");
+            return; // Não abrir link
+        default:
+            alert("Plataforma não suportada!");
+            return;
+    }
+
+    // Abre o link em uma nova aba
+    window.open(linkCompartilhamento, '_blank');
+}
+
